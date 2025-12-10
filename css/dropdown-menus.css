@@ -1,0 +1,79 @@
+.dropdown-item {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  box-shadow: var(--shadow);
+  background-color: var(--white);
+  border-radius: 10px;
+  top: 37px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.company.active,
+.features.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.features {
+  left: -80px;
+  padding: 24px 23px;
+}
+
+.features-list {
+  width: 107px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.features-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-features-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note {
+  fill: var(--blue);
+}
+
+.schedule {
+  fill: var(--blue);
+}
+
+.bell {
+  fill: var(--yellow);
+}
+
+.clock {
+  fill: var(--purple);
+}
+
+.company {
+  padding: 24px 25.5px;
+}
+
+.company-list {
+  width: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.dropdown-link:hover,
+.dropdown-link:focus,
+.dropdown-link:active {
+  color: var(--grey-950);
+}

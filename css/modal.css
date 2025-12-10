@@ -1,0 +1,126 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  background-color: var(--grey-opacity-950);
+
+  
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.modal-overlay.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-overlay.is-open .modal {
+  transform: translateX(0);
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  height: 100%;
+  background-color: var(--white);
+
+  transform: translateX(100%);
+  transition: transform 0.35s ease-in-out;
+
+  padding-top: 32px;
+  padding-left: 24px;
+}
+
+.modal-container {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 32px;
+  position: relative;
+  width: 195px;
+}
+
+.modal-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 16px;
+}
+
+.js-close-menu {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mobile-menu-close-btn-icon {
+  stroke: var(--grey-950);
+  width: 24px;
+  height: 24px;
+}
+
+.login-mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-register-mobile {
+  width: 100%;
+  height: 42px;
+  color: var(--grey-500);
+  border: 1.5px Solid var(--grey-500);
+  border-radius: 14px;
+}
+
+.btn-register-mobile:hover,
+.btn-register-mobile:focus,
+.btn-register-mobile:active {
+  color: var(--grey-950);
+  border-color: var(--grey-950);
+}
+
+.dropdown-item-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.dropdown-menu-mobile {
+  overflow: hidden;
+  padding-left: 24px;
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+.features-mobile.active,
+.company-mobile.active {
+  max-height: 148px;
+  opacity: 1;
+  overflow: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 283px;
+    padding-left: 48px;
+  }
+}

@@ -4,6 +4,7 @@
   --white: #ffffff;
   --black: #000000;
   --grey-950: #151515;
+  --grey-opacity-950: rgba(21, 21, 21, 0.75);
   --grey-500 : #686868;
   --grey-400: #adadad;
   --grey-200: #d8d8d8;
@@ -20,5 +21,5 @@
 
   /* Effects */
 
-  --shadow: 0 10px 40px rgb(0, 0, 0, 0.15%);
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }

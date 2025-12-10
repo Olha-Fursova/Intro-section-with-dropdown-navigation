@@ -25,49 +25,133 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <nav class="nav">
+        <div class="nav-container">
           <a href="#index.html" class="logo-link">
-            <svg class="icon-logo" width="84">
+            <svg class="icon-logo">
               <use href="./img/icons.svg#icon-snap"></use>
             </svg>
           </a>
           <ul class="nav-menu">
             <li class="menu-item">
-              <div class="dropdown">
-                <p class="p-small interactive-text">Features</p>
-                <span class="icon-nav-box">
-                  <svg class="icon-nav">
-                    <use href="./img/icons.svg#icon-path-closed"></use>
-                  </svg>
-                </span>
+              <div class="dropdown-item">
+                <div class="features-dropdown dropdown">
+                  <p class="text-small interactive-text">Features</p>
+                  <span class="icon-nav-box">
+                    <svg class="icon-nav">
+                      <use href="./img/icons.svg#icon-path-closed"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="features dropdown-menu">
+                  <ul class="features-list">
+                    <li class="features-item">
+                      <span class="icon-features-box">
+                        <svg class="icon-features note" width="16" height="16">
+                          <use href="./img/icons.svg#icon-note"></use>
+                        </svg>
+                      </span>
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >Todo List</a
+                      >
+                    </li>
+                    <li class="features-item">
+                      <span class="icon-features-box">
+                        <svg
+                          class="icon-features schedule"
+                          width="16"
+                          height="16"
+                        >
+                          <use href="./img/icons.svg#icon-schedule"></use>
+                        </svg>
+                      </span>
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >Calendar</a
+                      >
+                    </li>
+                    <li class="features-item">
+                      <span class="icon-features-box">
+                        <svg class="icon-features bell" width="16" height="16">
+                          <use href="./img/icons.svg#icon-bell"></use>
+                        </svg>
+                      </span>
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >Reminders</a
+                      >
+                    </li>
+                    <li class="features-item">
+                      <span class="icon-features-box">
+                        <svg class="icon-features clock" width="16" height="16">
+                          <use href="./img/icons.svg#icon-clock"></use>
+                        </svg>
+                      </span>
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >Planning</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="menu-item">
-              <div class="dropdown">
-                <p class="p-small interactive-text">Company</p>
-                <span class="icon-nav-box">
-                  <svg class="icon-nav">
-                    <use href="./img/icons.svg#icon-path-closed"></use>
-                  </svg>
-                </span>
+              <div class="dropdown-item">
+                <div class="company-dropdown dropdown">
+                  <p class="text-small interactive-text">Company</p>
+                  <span class="icon-nav-box">
+                    <svg class="icon-nav">
+                      <use href="./img/icons.svg#icon-path-closed"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="company dropdown-menu">
+                  <ul class="company-list">
+                    <li class="company-item">
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >History</a
+                      >
+                    </li>
+                    <li class="company-item">
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >Our Team</a
+                      >
+                    </li>
+                    <li class="company-item">
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >Blog</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="menu-item">
-              <a href="#index.html" class="nav-link p-small interactive-text"
+              <a href="#index.html" class="nav-link text-small interactive-text"
                 >Careers</a
               >
             </li>
             <li class="menu-item">
-              <a href="#index.html" class="nav-link p-small interactive-text"
+              <a href="#index.html" class="nav-link text-small interactive-text"
                 >About</a
               >
             </li>
           </ul>
-        </nav>
-        <div class="nav-btns">
-          <a href="#index.html" class="p-small interactive-text btn">Login</a>
-          <a href="#index.html" class="p-small btn btn-sub">Register</a>
         </div>
+        <div class="nav-btns">
+          <a href="#index.html" class="text-small interactive-text btn"
+            >Login</a
+          >
+          <a href="#index.html" class="text-small btn btn-sub">Register</a>
+        </div>
+        <button
+          class="js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="open menu"
+        >
+          <svg class="icon mobile-menu-btn-icon">
+            <use href="./img/icons.svg#icon-mobile-menu-button"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -77,7 +161,7 @@
           <div class="hero-left">
             <div class="cta-hero">
               <h1 class="main-heading">Make remote work</h1>
-              <p class="p-large-medium">
+              <p class="p-main-medium">
                 Get your team in sync, no matter your location. Streamline
                 processes, create team rituals, and watch productivity soar.
               </p>
@@ -86,42 +170,170 @@
             <ul class="hero-logos">
               <li class="hero-logo">
                 <span class="icon-hero-box">
-                  <svg class="icon-hero" width="114" height="20">
+                  <svg class="icon-hero databiz">
                     <use href="./img/icons.svg#icon-databiz"></use>
                   </svg>
                 </span>
               </li>
               <li class="hero-logo">
                 <span class="icon-hero-box">
-                  <svg class="icon-hero" width="73" height="36">
+                  <svg class="icon-hero audio-file">
                     <use href="./img/icons.svg#icon-audio-file-logo"></use>
                   </svg>
                 </span>
               </li>
               <li class="hero-logo">
                 <span class="icon-hero-box">
-                  <svg class="icon-hero" width="90" height="20">
+                  <svg class="icon-hero meet">
                     <use href="./img/icons.svg#icon-meet-logo"></use>
                   </svg>
                 </span>
               </li>
               <li class="hero-logo">
                 <span class="icon-hero-box">
-                  <svg class="icon-hero" width="82" height="24">
+                  <svg class="icon-hero maker">
                     <use href="./img/icons.svg#icon-maker-logo"></use>
                   </svg>
                 </span>
               </li>
             </ul>
           </div>
-          <img
-            srcset="./img/intro-image-1x.png, ./img/intro-image-2x.png"
-            src="./img/intro-image-1x.png"
-            alt="Jong man holding a laptop and is looking focused. There are a lot of differen colorful figures behind the man"
-            class="hero-img"
-          />
+          <div class="image-container"></div>
         </div>
       </section>
     </main>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="modal-container">
+          <button
+            class="js-close-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="open menu"
+          >
+            <svg class="icon mobile-menu-close-btn-icon">
+              <use href="./img/icons.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+          <ul class="modal-menu">
+            <li class="menu-item">
+              <div class="dropdown-item-mobile">
+                <div class="features-dropdown-mobile dropdown">
+                  <p class="text-small interactive-text">Features</p>
+                  <span class="icon-nav-box">
+                    <svg class="icon-nav">
+                      <use href="./img/icons.svg#icon-path-closed"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="features-mobile dropdown-menu-mobile">
+                  <ul class="features-list">
+                    <li class="features-item">
+                      <span class="icon-features-box">
+                        <svg class="icon-features note" width="16" height="16">
+                          <use href="./img/icons.svg#icon-note"></use>
+                        </svg>
+                      </span>
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >Todo List</a
+                      >
+                    </li>
+                    <li class="features-item">
+                      <span class="icon-features-box">
+                        <svg
+                          class="icon-features schedule"
+                          width="16"
+                          height="16"
+                        >
+                          <use href="./img/icons.svg#icon-schedule"></use>
+                        </svg>
+                      </span>
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >Calendar</a
+                      >
+                    </li>
+                    <li class="features-item">
+                      <span class="icon-features-box">
+                        <svg class="icon-features bell" width="16" height="16">
+                          <use href="./img/icons.svg#icon-bell"></use>
+                        </svg>
+                      </span>
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >Reminders</a
+                      >
+                    </li>
+                    <li class="features-item">
+                      <span class="icon-features-box">
+                        <svg class="icon-features clock" width="16" height="16">
+                          <use href="./img/icons.svg#icon-clock"></use>
+                        </svg>
+                      </span>
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >Planning</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item">
+              <div class="dropdown-item-mobile">
+                <div class="company-dropdown-mobile dropdown">
+                  <p class="text-small interactive-text">Company</p>
+                  <span class="icon-nav-box">
+                    <svg class="icon-nav">
+                      <use href="./img/icons.svg#icon-path-closed"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div class="company-mobile dropdown-menu-mobile">
+                  <ul class="company-list">
+                    <li class="company-item">
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >History</a
+                      >
+                    </li>
+                    <li class="company-item">
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >Our Team</a
+                      >
+                    </li>
+                    <li class="company-item">
+                      <a href="#index.html" class="dropdown-link text-small"
+                        >Blog</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a href="#index.html" class="nav-link text-small interactive-text"
+                >Careers</a
+              >
+            </li>
+            <li class="menu-item">
+              <a href="#index.html" class="nav-link text-small interactive-text"
+                >About</a
+              >
+            </li>
+          </ul>
+          <div class="login-mobile">
+            <a href="#index.html" class="text-small interactive-text btn"
+              >Login</a
+            >
+            <a href="#index.html" class="text-small btn btn-register-mobile"
+              >Register</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./modal.js" defer></script>
+    <script src="./dropdown.js" defer></script>
+    <script src="./dropdown-mobile.js" defer></script>
   </body>
 </html>
