@@ -1,0 +1,24 @@
+:root {
+  /* color pallete */
+
+  --white: #ffffff;
+  --black: #000000;
+  --grey-950: #151515;
+  --grey-500 : #686868;
+  --grey-400: #adadad;
+  --grey-200: #d8d8d8;
+  --grey-50 : #fafafa;
+
+  --blue: #4bb1da;
+  --violet: #726cee;
+  --yellow: #edd556;
+  --purple: #8e4cb6; 
+
+  /* Typography */
+
+  --main-font: "Epilogue", serif;
+
+  /* Effects */
+
+  --shadow: 0 10px 40px rgb(0, 0, 0, 0.15%);
+}

@@ -1,0 +1,151 @@
+/* ----------------- */
+/* General */
+/* ----------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+/* ----------------- */
+/* Typography */
+/* ----------------- */
+
+.main-heading {
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.h2-heading {
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.h3-heading {
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.p-large-bold {
+  font-size: 18px;
+  line-height: 155%;
+  letter-spacing: -0.25px;
+  font-weight: bold;
+}
+
+.p-large-medium {
+  font-size: 18px;
+  line-height: 155%;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+
+.p-main-bold {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: -0.25px;
+  font-weight: bold;
+}
+
+.p-main-medium {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+
+.p-small {
+  font-size: 14px;
+  line-height: 115%;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+
+.interactive-text {
+  color: var(--grey-500);
+  border: none;
+}
+
+.interactive-text:hover,
+.interactive-text:focus,
+.interactive-text:active {
+  color: var(--grey-950);
+}
+
+/* ----------------- */
+/* Buttons */
+/* ----------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-main {
+  width: 163px;
+  height: 56px;
+  gap: 8px;
+  padding: 8px 24px;
+  border: 1.5px Solid var(--grey-950);
+  background-color: var(--grey-950);
+  color: var(--grey-50);
+  border-radius: 15px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-main:hover,
+.btn-main:focus,
+.btn-main:active {
+  background-color: var(--white);
+  color: var(--grey-950);
+  
+}
+
+.btn-sub {
+  width: 104px;
+  height: 42px;
+  gap: 8px;
+  padding: 16px;
+  color: var(--grey-500);
+  border: 1.5px Solid var(--grey-500);
+  border-radius: 14px;
+}
+
+.btn-sub:hover,
+.btn-sub:focus,
+.btn-sub:active {
+  color: var(--grey-950);
+  border-color: var(--grey-950);
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}

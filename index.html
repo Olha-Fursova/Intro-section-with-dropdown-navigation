@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro section with dropdown navigation</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <nav class="nav">
+          <a href="#index.html" class="logo-link">
+            <svg class="icon-logo" width="84">
+              <use href="./img/icons.svg#icon-snap"></use>
+            </svg>
+          </a>
+          <ul class="nav-menu">
+            <li class="menu-item">
+              <div class="dropdown">
+                <p class="p-small interactive-text">Features</p>
+                <span class="icon-nav-box">
+                  <svg class="icon-nav">
+                    <use href="./img/icons.svg#icon-path-closed"></use>
+                  </svg>
+                </span>
+              </div>
+            </li>
+            <li class="menu-item">
+              <div class="dropdown">
+                <p class="p-small interactive-text">Company</p>
+                <span class="icon-nav-box">
+                  <svg class="icon-nav">
+                    <use href="./img/icons.svg#icon-path-closed"></use>
+                  </svg>
+                </span>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a href="#index.html" class="nav-link p-small interactive-text"
+                >Careers</a
+              >
+            </li>
+            <li class="menu-item">
+              <a href="#index.html" class="nav-link p-small interactive-text"
+                >About</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-btns">
+          <a href="#index.html" class="p-small interactive-text btn">Login</a>
+          <a href="#index.html" class="p-small btn btn-sub">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-left">
+            <div class="cta-hero">
+              <h1 class="main-heading">Make remote work</h1>
+              <p class="p-large-medium">
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </p>
+              <a href="#index.html" class="p-small btn btn-main">Learn more</a>
+            </div>
+            <ul class="hero-logos">
+              <li class="hero-logo">
+                <span class="icon-hero-box">
+                  <svg class="icon-hero" width="114" height="20">
+                    <use href="./img/icons.svg#icon-databiz"></use>
+                  </svg>
+                </span>
+              </li>
+              <li class="hero-logo">
+                <span class="icon-hero-box">
+                  <svg class="icon-hero" width="73" height="36">
+                    <use href="./img/icons.svg#icon-audio-file-logo"></use>
+                  </svg>
+                </span>
+              </li>
+              <li class="hero-logo">
+                <span class="icon-hero-box">
+                  <svg class="icon-hero" width="90" height="20">
+                    <use href="./img/icons.svg#icon-meet-logo"></use>
+                  </svg>
+                </span>
+              </li>
+              <li class="hero-logo">
+                <span class="icon-hero-box">
+                  <svg class="icon-hero" width="82" height="24">
+                    <use href="./img/icons.svg#icon-maker-logo"></use>
+                  </svg>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <img
+            srcset="./img/intro-image-1x.png, ./img/intro-image-2x.png"
+            src="./img/intro-image-1x.png"
+            alt="Jong man holding a laptop and is looking focused. There are a lot of differen colorful figures behind the man"
+            class="hero-img"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
