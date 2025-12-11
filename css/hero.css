@@ -1,3 +1,7 @@
+/* ------------------ */
+/* ----Containers---- */
+/* ------------------ */
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -31,6 +35,10 @@
   height: 26px;
 }
 
+/* ------------- */
+/* ----Icons---- */
+/* ------------- */
+
 .icon-hero-box {
   display: flex;
   height: auto;
@@ -60,6 +68,10 @@
   height: 17px;
 }
 
+/* -------------- */
+/* ----Images---- */
+/* -------------- */
+
 .image-container {
   height: 282px;
   width: 375px;
@@ -72,6 +84,10 @@
 .hero-img {
   object-fit: cover;
 }
+
+/* --------------- */
+/* ----Buttons---- */
+/* --------------- */
 
 .btn-main {
   width: 136px;
@@ -86,7 +102,9 @@
     color 0.3s ease-in-out;
 }
 
-/* ----- Fonts ----- */
+/* ------------------ */
+/* ----Typography---- */
+/* ------------------ */
 
 .main-heading {
   font-size: 36px;
@@ -111,6 +129,10 @@
   letter-spacing: -0.25px;
   font-weight: 700;
 }
+
+/* -------------- */
+/* ----Tablet---- */
+/* -------------- */
 
 @media screen and (min-width: 768px) {
   .hero-container {
@@ -179,6 +201,10 @@
     height: 34px;
   }
 }
+
+/* --------------- */
+/* ----Desktop---- */
+/* --------------- */
 
 @media screen and (min-width: 1440px) {
   .hero-container {

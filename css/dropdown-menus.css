@@ -1,3 +1,7 @@
+/* ------------------ */
+/* ----Containers---- */
+/* ------------------ */
+
 .dropdown-item {
   position: relative;
 }
@@ -24,6 +28,18 @@
   padding: 24px 23px;
 }
 
+.company {
+  padding: 24px 25.5px;
+}
+
+.company-list {
+  width: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
 .features-list {
   width: 107px;
   display: flex;
@@ -37,6 +53,16 @@
   align-items: center;
   gap: 16px;
 }
+
+.dropdown-link:hover,
+.dropdown-link:focus,
+.dropdown-link:active {
+  color: var(--grey-950);
+}
+
+/* ------------- */
+/* ----Icons---- */
+/* ------------- */
 
 .icon-features-box {
   display: flex;
@@ -58,22 +84,4 @@
 
 .clock {
   fill: var(--purple);
-}
-
-.company {
-  padding: 24px 25.5px;
-}
-
-.company-list {
-  width: 65px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 16px;
-}
-
-.dropdown-link:hover,
-.dropdown-link:focus,
-.dropdown-link:active {
-  color: var(--grey-950);
 }

@@ -1,3 +1,7 @@
+/* ------------------ */
+/* ----Containers---- */
+/* ------------------ */
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -10,7 +14,6 @@
   justify-content: start;
   background-color: var(--grey-opacity-950);
 
-  
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.35s ease-in-out, transform 0.25s ease-in-out;
@@ -59,6 +62,10 @@
   gap: 16px;
 }
 
+/* --------------- */
+/* ----Buttons---- */
+/* --------------- */
+
 .js-close-menu {
   background: none;
   border: none;
@@ -96,6 +103,10 @@
   border-color: var(--grey-950);
 }
 
+/* ---------------- */
+/* ----Dropdown---- */
+/* ---------------- */
+
 .dropdown-item-mobile {
   display: flex;
   flex-direction: column;
@@ -117,6 +128,10 @@
   opacity: 1;
   overflow: visible;
 }
+
+/* -------------- */
+/* ----Tablet---- */
+/* -------------- */
 
 @media screen and (min-width: 768px) {
   .modal {

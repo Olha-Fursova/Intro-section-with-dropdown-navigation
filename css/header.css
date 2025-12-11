@@ -1,3 +1,7 @@
+/* ------------------ */
+/* ----Containers---- */
+/* ------------------ */
+
 .header {
   padding: 16px 16px 24px 16px;
 }
@@ -30,6 +34,14 @@
   gap: 40px;
 }
 
+/* ------------- */
+/* ----Icons---- */
+/* ------------- */
+
+.icon-nav-box {
+  padding-top: 4px;
+}
+
 .icon-logo {
   width: 87px;
   height: 35px;
@@ -49,6 +61,10 @@
   stroke: var(--grey-500);
   fill: none;
 }
+
+/* ---------------- */
+/* ----Dropdown---- */
+/* ---------------- */
 
 .dropdown {
   display: flex;
@@ -70,9 +86,9 @@
   color: var(--grey-950);
 }
 
-.icon-nav-box {
-  padding-top: 4px;
-}
+/* ------------------ */
+/* ----Typography---- */
+/* ------------------ */
 
 .text-small {
   color: var(--grey-500);
@@ -81,6 +97,10 @@
   letter-spacing: 0;
   font-weight: 500;
 }
+
+/* --------------- */
+/* ----Buttons---- */
+/* --------------- */
 
 .js-open-menu {
   background: none;
@@ -92,6 +112,10 @@
   height: 18px;
 }
 
+/* -------------- */
+/* ----Tablet---- */
+/* -------------- */
+
 @media screen and (min-width: 768px) {
   .header {
     padding: 24px 40px 32px 40px;
@@ -101,6 +125,10 @@
     width: 688px;
   }
 }
+
+/* --------------- */
+/* ----Desktop---- */
+/* --------------- */
 
 @media screen and (min-width: 1440px) {
   .header {

@@ -1,42 +1,38 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const featuresDropdownMobile = document.querySelector(
-    ".features-dropdown-mobile"
-  );
-  const companyDropdownMobile = document.querySelector(
-    ".company-dropdown-mobile"
-  );
-  const featuresMenuMobile = document.querySelector(".features-mobile");
-  const companyMenuMobile = document.querySelector(".company-mobile");
+  function initDropdown(triggerSelector, menuSelector) {
+    const trigger = document.querySelector(triggerSelector);
+    const menu = document.querySelector(menuSelector);
+    const menuLinks = menu.querySelectorAll("a");
 
-  featuresDropdownMobile.addEventListener("click", (e) => {
-    e.stopPropagation();
-    featuresMenuMobile.classList.toggle("active");
+    if (!trigger || !menu) return;
 
-    const icon = featuresDropdownMobile.querySelector("use");
+    const icon = trigger.querySelector("use");
 
-    const isOpen = featuresMenuMobile.classList.contains("active");
+    function setIcon(isOpen) {
+      icon.setAttribute(
+        "href",
+        isOpen
+          ? "./img/icons.svg#icon-path-open"
+          : "./img/icons.svg#icon-path-closed"
+      );
+    }
 
-    icon.setAttribute(
-      "href",
-      isOpen
-        ? "./img/icons.svg#icon-path-open"
-        : "./img/icons.svg#icon-path-closed"
-    );
-  });
+    trigger.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = menu.classList.toggle("active");
+      setIcon(isOpen);
+    });
 
-  companyDropdownMobile.addEventListener("click", (e) => {
-    e.stopPropagation();
-    companyMenuMobile.classList.toggle("active");
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("active");
+        setIcon(false);
+      });
+    });
+  }
 
-    const icon = companyDropdownMobile.querySelector("use");
-
-    const isOpen = companyMenuMobile.classList.contains("active");
-
-    icon.setAttribute(
-      "href",
-      isOpen
-        ? "./img/icons.svg#icon-path-open"
-        : "./img/icons.svg#icon-path-closed"
-    );
-  });
+  initDropdown(".features-dropdown-mobile", ".features-mobile");
+  initDropdown(".company-dropdown-mobile", ".company-mobile");
+  initDropdown(".features-dropdown", ".features");
+  initDropdown(".company-dropdown", ".company");
 });
